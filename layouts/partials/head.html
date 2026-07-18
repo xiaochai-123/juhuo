@@ -1,0 +1,27 @@
+{{- partialCached "head/favicons" . }}
+<meta name="keywords" content="{{ with .Keywords }}{{ delimit . ", " }}{{ else }}{{ $.Site.Params.keywords }}{{ end }}" />
+{{- $description := default .Site.Params.description (default .Summary .Description) }}
+{{- with $description }}
+  <meta name="description" content="{{ . }}" />
+{{- end }}
+{{- partial "head/meta" . }}
+{{- partial "head/feed" . }}
+{{- partialCached "head/site-verification" . }}
+{{- partial "head/assets" . }}
+
+<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+<script>
+(function() {
+  var originalTitle = document.title;
+  document.addEventListener('visibilitychange', function() {
+    if (document.hidden) {
+      document.title = '下次再见~';
+    } else {
+      document.title = '欢迎回来~';
+      setTimeout(function() {
+        document.title = originalTitle;
+      }, 1500); // 1.5 秒后恢复原标题
+    }
+  });
+})();
+</script>

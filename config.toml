@@ -1,0 +1,76 @@
+baseURL = 'https://juhuo.pages.dev'
+languageCode = 'zh-cn'
+title = '炬火'
+theme = "hugo-theme-bootstrap"
+copyright = "Copyright © {year} 炬火社. All Rights Reserved."
+[params]
+  description = "接过炬火，重返峥嵘"
+  logo = "images/logo.png"
+  tocPosition = "sidebar"      # "sidebar" 表示在侧边栏自动显示目录栏
+  showToc = true
+  toc = true
+  comment = "giscus"
+  tocWordCount = 0
+  colorScheme = "auto"
+  palette = "red"   
+  [params.social]
+  github = "https://github.com/xiaochai-123"
+  email = "mailto:l2556843965@163.com"
+  [params.giscus]
+  repo = "xiaochai-123/juhuo"
+  repoID = "R_kgDOQcBRNA"
+  category = "Announcements"
+  categoryID = "DIC_kwDOQcBRNM4Cy98G"
+  mapping = "pathname"
+  strict = false
+  reactionsEnabled = true
+  emitMetadata = false
+  inputPosition = "bottom"
+  theme = "preferred_color_scheme"
+  lang = "zh-CN"
+  loading = "lazy"
+  crossorigin = "anonymous"
+  favicon = false
+  [params.topAppBar]
+  expandBreakpoint = "lg"
+#  [params.favicon]
+#  icon = "/favicon.ico"
+  [params.reward]
+  wechat = "/images/wechat.jpg"
+  [params.post]
+    copyright = true
+  
+  [params.creativeCommons]
+    by = true
+    nc = true
+    sa = false
+	nd = true
+[menu]
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "friends"
+    name = "Members"
+    url  = "/friends/"
+    weight = 4
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

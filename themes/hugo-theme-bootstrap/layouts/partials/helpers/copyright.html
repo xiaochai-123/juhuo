@@ -1,0 +1,5 @@
+{{- with .Site.Copyright -}}
+  {{ replace . "{year}" now.Year }}
+{{- else -}}
+  © {{ now.Year }} xiaochai-123. 欢迎转载但请注明出处 | 本博客内容版权所有
+{{- end -}}

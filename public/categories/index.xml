@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on 炬火</title>
+    <link>https://juhuo.pages.dev/categories/</link>
+    <description>Recent content in Categories on 炬火</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <copyright>Copyright © 2026 炬火社. All Rights Reserved.</copyright>
+    <lastBuildDate>Sun, 12 Jul 2026 16:31:35 +0800</lastBuildDate><atom:link href="https://juhuo.pages.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
+

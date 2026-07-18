@@ -1,0 +1,43 @@
+<!-- 个人信息卡片，可以写头像、昵称、简介等 -->
+<div class="card mb-3">
+  <div class="card-body text-center">
+    <img src="/images/logo.png" alt="我的头像" class="rounded-circle mb-2" width="100" height="100">
+    <h5 class="card-title">炬火</h5>
+	<p id="random-quote" class="card-text text-muted"></p>
+	<script>
+	const quotes = [
+  "接过炬火，重返峥嵘",
+  "全世界无产者，联合起来！"
+	];
+	document.getElementById('random-quote').innerText = quotes[Math.floor(Math.random() * quotes.length)];
+	</script>
+<nav class="d-flex justify-content-center gap-2 my-2">
+  <a class="btn btn-sm btn-outline-dark rounded-circle" href="https://github.com/xiaochai-123" title="GitHub" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+  <a class="btn btn-sm btn-outline-primary rounded-circle" href="mailto:l2556843965@163.com" title="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+  <a class="btn btn-sm btn-outline-danger rounded-circle" href="https://space.bilibili.com/595746072" title="Bilibili" target="_blank">
+  <i class="fab fa-bilibili"></i> <!-- 仅6.x新版本免费/pro都有，老版本没有 -->
+</a>
+  <!-- 可继续加其它社交 -->
+</nav>
+  </div>
+</div>
+
+<!-- 保留/删除原 partials，看你个人需求 
+{{- partialCached "sidebar/profile" . .Site }}
+{{- partialCached "sidebar/taxonomies-toggle" . }}
+{{- partial "sidebar/posts-toggle" . }}
+...
+{{- partialCached "sidebar/profile" . .Site }}
+{{- partialCached "sidebar/taxonomies-toggle" . }}-->
+{{- partial "sidebar/posts-toggle" . }}
+{{- if ne "content" .Site.Params.tocPosition }}
+  {{- partial "sidebar/toc" . }}
+{{- end }}
+{{- partial "sidebar/featured-posts" . .Section }}
+{{- partial "sidebar/recent-posts" . .Section }}
+{{- partialCached "sidebar/taxonomies" . }}
+{{- partialCached "sidebar/archive" . }}

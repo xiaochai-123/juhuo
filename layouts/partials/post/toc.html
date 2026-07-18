@@ -1,0 +1,13 @@
+{{- if partial "functions/toc" . -}}
+<div id="postTOC" class="mb-3 text-surface">
+  <h2 class="mb-3">
+    {{- i18n "table_of_contents" -}}
+    <a class="anchor ms-1" href="#postTOC"></a>
+  </h2>
+	{{ $startLevel := 2 }}
+	{{ $endLevel := 5 }}  <!-- 改成4就包含h4，改成5就包含h5 -->
+	{{ $ordered := false }}
+	{{ .Fragments.ToHTML $startLevel $endLevel $ordered | safeHTML }}
+  <hr class="text-secondary">
+</div>
+{{- end -}}

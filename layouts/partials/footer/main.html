@@ -1,0 +1,29 @@
+{{- partial "footer/actions-panel" . -}}
+<div class="row text-center{{ if .Site.Menus.footer }} text-lg-start{{ end }}">
+  <div class="col-12 mt-2{{ if .Site.Menus.footer }} col-lg-3{{ end }}">
+    <p class="mb-2">{{ .Site.Title }}</p>
+    <p class="text-secondary mb-2"><small>{{ .Site.Params.Description }}</small></p>
+	    {{- with .Site.Copyright -}}
+      {{ replace . "{year}" now.Year }}
+    {{- else -}}
+      © {{ now.Year }} xiaochai-123. 欢迎转载但请注明出处 | 本博客内容版权所有
+    {{- end -}}
+	    <!-- 这里插入busuanzi 统计 -->
+    <div class="footer-line visitor" style="margin: 0.5em 0;">
+      <span id="busuanzi_container_site_uv" title="总访客数" style="display: inline;">
+        🐾 总访客数 <span id="busuanzi_value_site_uv">...</span>
+      </span>
+      <span id="busuanzi_container_site_pv" class="footer-divider" title="总访问量" style="display: inline; margin-left: 1em;">
+        👀 总访问量 <span id="busuanzi_value_site_pv">...</span>
+      </span>
+    </div>
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <!-- busuanzi end -->
+    {{- partialCached "footer/powered-by" . -}}
+    {{- partial "footer/social-links" . -}}
+  </div>
+  <div class="col-12 col-lg-8 offset-0 offset-lg-1">
+    {{- partialCached "footer/menu" . -}}
+  </div>
+  {{- partialCached "footer/beian" . -}}
+</div>

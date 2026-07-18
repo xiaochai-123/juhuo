@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: xiaochai-123/juhuo
+  branch: main
+  base_url: https://juhuo.pages.dev
+  auth_endpoint: /api/auth
+
+# 因为你的 public/ 就是网站根目录，所以图片直接存在 /images 下
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "posts"
+    label: "文章"
+    folder: "posts"   # ← 注意：不要前面的 /
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "发布日期", name: "date", widget: "datetime" }
+      - { label: "正文", name: "body", widget: "markdown" }
