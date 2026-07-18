@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "juhuo",
+  "compatibility_date": "2026-07-18",
+  "assets": {
+    "directory": "./public"
+  },
+  "functions": {
+    "dir": "./functions"
+  },
+  "compatibility_flags": ["nodejs_compat"]
+}
