@@ -5,7 +5,6 @@ backend:
   base_url: https://juhuo.pages.dev
   auth_endpoint: /api/auth
 
-# 图片上传配置
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
@@ -15,8 +14,8 @@ collections:
     folder: "content/posts"
     create: true
     slug: "{{slug}}"
-    format: "toml"
-    frontmatter_delimiter: "+++"
+    format: "yaml"                   # ← 使用 yaml
+    frontmatter_delimiter: "---"     # ← 使用 ---
     fields:
       - { label: "标题", name: "title", widget: "string" }
       - { label: "发布日期", name: "date", widget: "datetime" }
