@@ -23,13 +23,12 @@ collections:
       - { label: "标签", name: "tags", widget: "list", default: ["标签"] }
       - { label: "权重", name: "weight", widget: "number", default: 1 }
       - { label: "轮播图", name: "carousel", widget: "boolean", default: false }
-      # ========== 关键修改 ==========
-      - label: "图片"
+      - label: "封面图"
         name: "images"
         widget: "list"
-        default: [""]
-        field: { label: "图片路径", name: "image_url", widget: "string" }
-      # =============================
+        field: { label: "图片", name: "url", widget: "image" }
+        default: []
+        max: 1
       - { label: "描述", name: "description", widget: "string" }
       - { label: "数学公式", name: "math", widget: "boolean", default: false }
       - { label: "正文", name: "body", widget: "markdown" }
