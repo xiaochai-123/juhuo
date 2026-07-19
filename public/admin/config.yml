@@ -13,9 +13,8 @@ collections:
     label: "文章"
     folder: "content/posts"
     create: true
-    slug: "{{slug}}"
-    format: "yaml"                   # ← 使用 yaml
-    frontmatter_delimiter: "---"     # ← 使用 ---
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    format: "toml-frontmatter"        # ← 关键：用 toml-frontmatter，不是 toml
     fields:
       - { label: "标题", name: "title", widget: "string" }
       - { label: "发布日期", name: "date", widget: "datetime" }
@@ -24,7 +23,7 @@ collections:
       - { label: "标签", name: "tags", widget: "list", default: ["标签"] }
       - { label: "权重", name: "weight", widget: "number", default: 1 }
       - { label: "轮播图", name: "carousel", widget: "boolean", default: false }
-      - { label: "图片", name: "images", widget: "image", default: "" }
+      - { label: "图片", name: "images", widget: "image", required: false }
       - { label: "描述", name: "description", widget: "string" }
       - { label: "数学公式", name: "math", widget: "boolean", default: false }
       - { label: "正文", name: "body", widget: "markdown" }
