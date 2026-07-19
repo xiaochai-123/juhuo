@@ -2,46 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/2026-07-19_test%E5%90%8E%E5%8F%B0111/</loc>
-    <lastmod>2026-07-19T11:52:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2026-07-19_test%E5%90%8E%E5%8F%B0/</loc>
-    <lastmod>2026-07-19T11:37:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%85%A5%E9%97%A8/</loc>
-    <lastmod>2026-07-12T16:31:35+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-07-19T11:52:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-07-19T11:52:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-07-19T11:52:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/%E5%88%86%E7%B1%BB222/</loc>
-    <lastmod>2026-07-19T11:52:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E6%A0%87%E7%AD%BE111/</loc>
-    <lastmod>2026-07-19T11:52:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-07-19T11:52:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/aaaaa/</loc>
-    <lastmod>2026-07-19T11:37:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/asd123/</loc>
-    <lastmod>2026-07-19T11:37:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/123/</loc>
-    <lastmod>2026-07-12T16:31:35+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/asd/</loc>
-    <lastmod>2026-07-12T16:31:35+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/friends/</loc>
+    <loc>https://juhuo.pages.dev/friends/</loc>
     <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://juhuo.pages.dev/</loc>
+    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://juhuo.pages.dev/categories/</loc>
+  </url><url>
+    <loc>https://juhuo.pages.dev/tags/</loc>
   </url>
 </urlset>
