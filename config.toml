@@ -14,8 +14,8 @@ copyright = "Copyright © {year} 炬火社. All Rights Reserved."
   colorScheme = "auto"
   palette = "red"   
   [params.social]
-  github = "https://github.com/xiaochai-123"
-  email = "mailto:l2556843965@163.com"
+  github = "https://juhuo.pages.dev/123"
+  email = "https://juhuo.pages.dev/123"
   [params.giscus]
   repo = "xiaochai-123/juhuo"
   repoID = "R_kgDOQcBRNA"
@@ -35,8 +35,8 @@ copyright = "Copyright © {year} 炬火社. All Rights Reserved."
   expandBreakpoint = "lg"
 #  [params.favicon]
 #  icon = "/favicon.ico"
-  [params.reward]
-  wechat = "/images/wechat.jpg"
+# [params.reward]
+#  wechat = "/images/wechat.jpg"
   [params.post]
     copyright = true
   
@@ -65,11 +65,11 @@ copyright = "Copyright © {year} 炬火社. All Rights Reserved."
     url = "/tags/"
     weight = 3
 
-  [[menu.main]]
-    identifier = "friends"
-    name = "Members"
-    url  = "/friends/"
-    weight = 4
+#  [[menu.main]]
+#    identifier = "friends"
+#    name = "Members"
+#    url  = "/friends/"
+#    weight = 4
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

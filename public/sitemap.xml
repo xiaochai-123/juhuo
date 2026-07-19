@@ -2,14 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://juhuo.pages.dev/friends/</loc>
-    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://juhuo.pages.dev/</loc>
-    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+    <loc>https://juhuo.pages.dev/posts/2026-07-19_helloworld/</loc>
+    <lastmod>2026-07-19T12:59:00+08:00</lastmod>
   </url><url>
     <loc>https://juhuo.pages.dev/categories/</loc>
+    <lastmod>2026-07-19T12:59:00+08:00</lastmod>
+  </url><url>
+    <loc>https://juhuo.pages.dev/categories/helloworld/</loc>
+    <lastmod>2026-07-19T12:59:00+08:00</lastmod>
+  </url><url>
+    <loc>https://juhuo.pages.dev/tags/helloworld/</loc>
+    <lastmod>2026-07-19T12:59:00+08:00</lastmod>
+  </url><url>
+    <loc>https://juhuo.pages.dev/posts/</loc>
+    <lastmod>2026-07-19T12:59:00+08:00</lastmod>
   </url><url>
     <loc>https://juhuo.pages.dev/tags/</loc>
+    <lastmod>2026-07-19T12:59:00+08:00</lastmod>
+  </url><url>
+    <loc>https://juhuo.pages.dev/</loc>
+    <lastmod>2026-07-19T12:59:00+08:00</lastmod>
+  </url><url>
+    <loc>https://juhuo.pages.dev/friends/</loc>
+    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
   </url>
 </urlset>
