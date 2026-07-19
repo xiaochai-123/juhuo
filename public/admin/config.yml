@@ -14,7 +14,7 @@ collections:
     folder: "content/posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
-    format: "toml-frontmatter"        # ← 关键：用 toml-frontmatter，不是 toml
+    format: "toml-frontmatter"
     fields:
       - { label: "标题", name: "title", widget: "string" }
       - { label: "发布日期", name: "date", widget: "datetime" }
@@ -23,7 +23,13 @@ collections:
       - { label: "标签", name: "tags", widget: "list", default: ["标签"] }
       - { label: "权重", name: "weight", widget: "number", default: 1 }
       - { label: "轮播图", name: "carousel", widget: "boolean", default: false }
-      - { label: "图片", name: "images", widget: "list", default: [""] }
+      # ========== 关键修改 ==========
+      - label: "图片"
+        name: "images"
+        widget: "list"
+        default: [""]
+        field: { label: "图片路径", name: "image_url", widget: "string" }
+      # =============================
       - { label: "描述", name: "description", widget: "string" }
       - { label: "数学公式", name: "math", widget: "boolean", default: false }
       - { label: "正文", name: "body", widget: "markdown" }
