@@ -5,19 +5,19 @@ backend:
   base_url: https://juhuo.pages.dev
   auth_endpoint: /api/auth
 
-# 图片上传配置（适配你的 Hugo 项目结构）
-media_folder: "static/images/uploads"  # 图片保存到 static 目录下
-public_folder: "/images/uploads"       # 网站中通过 /images/uploads 访问
+# 图片上传配置
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
 
-# 文章集合配置
 collections:
-  - name: "posts"                      # 集合名称
-    label: "文章"                      # 后台显示名称
-    folder: "content/posts"            # 文章存放路径
-    create: true                       # 允许创建新文章
-    slug: "{{slug}}"                   # 文件名格式
-    frontmatter_delimiter: "+++"       # 使用 TOML 格式（你的文章标头格式）
-    fields:                            # 文章字段配置
+  - name: "posts"
+    label: "文章"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    format: "toml"
+    frontmatter_delimiter: "+++"
+    fields:
       - { label: "标题", name: "title", widget: "string" }
       - { label: "发布日期", name: "date", widget: "datetime" }
       - { label: "草稿", name: "draft", widget: "boolean", default: false }
@@ -28,4 +28,4 @@ collections:
       - { label: "图片", name: "images", widget: "image", default: "" }
       - { label: "描述", name: "description", widget: "string" }
       - { label: "数学公式", name: "math", widget: "boolean", default: false }
-      - { label: "正文内容", name: "body", widget: "markdown" }
+      - { label: "正文", name: "body", widget: "markdown" }
