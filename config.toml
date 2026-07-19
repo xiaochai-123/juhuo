@@ -13,6 +13,15 @@ copyright = "Copyright © {year} 炬火社. All Rights Reserved."
   tocWordCount = 0
   colorScheme = "auto"
   palette = "red"   
+  [params.search]
+  paginate = 10
+  indexPaginate = 1000
+  indexPreload = true
+  maxResults = 100
+  resultContentCharactersCount = 240
+  shortcut = ["/"]
+  [params.search.fuse]
+  ignoreLocation = true
   [params.social]
   github = "https://juhuo.pages.dev/123"
   email = "https://juhuo.pages.dev/123"
