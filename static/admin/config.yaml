@@ -5,17 +5,25 @@ backend:
   base_url: https://juhuo.pages.dev
   auth_endpoint: /api/auth
 
-# 因为你的 public/ 就是网站根目录，所以图片直接存在 /images 下
-media_folder: "images/uploads"
+media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
   - name: "posts"
     label: "文章"
-    folder: "posts"   # ← 注意：不要前面的 /
+    folder: "content/posts"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    format: "toml-frontmatter"        # ← 关键：用 toml-frontmatter，不是 toml
     fields:
       - { label: "标题", name: "title", widget: "string" }
       - { label: "发布日期", name: "date", widget: "datetime" }
+      - { label: "草稿", name: "draft", widget: "boolean", default: false }
+      - { label: "分类", name: "categories", widget: "list", default: ["分类"] }
+      - { label: "标签", name: "tags", widget: "list", default: ["标签"] }
+      - { label: "权重", name: "weight", widget: "number", default: 1 }
+      - { label: "轮播图", name: "carousel", widget: "boolean", default: false }
+      - { label: "图片", name: "images", widget: "list", default: [""] }
+      - { label: "描述", name: "description", widget: "string" }
+      - { label: "数学公式", name: "math", widget: "boolean", default: false }
       - { label: "正文", name: "body", widget: "markdown" }
