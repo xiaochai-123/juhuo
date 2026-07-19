@@ -92,11 +92,20 @@ markup: "html"
   <div class="friend-cards">
 
 	<div class="friend-card">
+	  <img src="http://q.qlogo.cn/headimg_dl?dst_uin=3919130316&spec=640&img_type=jpg" alt="言语">
+	  <span>言语</span>
+	</div>
+	
+	<div class="friend-card">
 	  <img src="https://decimo.top/images/my-avatar.jpg" alt="拐">
 	  <span>拐</span>
 	</div>
-    
-    <!-- 继续添加你的朋友们的卡片即可 -->
+	
+	<div class="friend-card">
+	  <img src="http://q.qlogo.cn/headimg_dl?dst_uin=3187306023&spec=640&img_type=jpg" alt="荷达林">
+	  <span>荷达林</span>
+	</div>
+	<!-- 继续添加你的朋友们的卡片即可 -->
   </div>
 </section>
 
@@ -111,7 +120,7 @@ markup: "html"
       </a>
       <a href="https://juhuo.pages.dev" target="_blank">炬火社</a>
     </div>
-	
+    
     <!-- 继续添加你的组织卡片即可 -->
   </div>
 </section>

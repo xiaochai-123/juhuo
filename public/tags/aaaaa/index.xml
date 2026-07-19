@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Aaaaa on 炬火</title>
+    <link>http://localhost:1313/tags/aaaaa/</link>
+    <description>Recent content in Aaaaa on 炬火</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <copyright>Copyright © 2026 炬火社. All Rights Reserved.</copyright>
+    <lastBuildDate>Sun, 19 Jul 2026 11:37:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/aaaaa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test后台</title>
+      <link>http://localhost:1313/posts/2026-07-19_test%E5%90%8E%E5%8F%B0/</link>
+      <pubDate>Sun, 19 Jul 2026 11:37:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/2026-07-19_test%E5%90%8E%E5%8F%B0/</guid>
+      <description><![CDATA[<h1 id="qweqweqqweqwe" data-numberify>qweqweqqweqwe<a class="anchor ms-1" href="#qweqweqqweqwe"></a></h1>
+<ol>
+<li>asdasdasd</li>
+</ol>
+<p>asdasd</p>
+<p><picture><img class="img-fluid " alt="1112" src="http://localhost:1313/images/uploads/img_1736.jpg?v=c47f1a344bbf1e82566eb76450065dd5" loading="lazy" title="123123" width="300" height="300" />
+</picture>
+
+</p>]]></description>
+    <enclosure url="http://localhost:1313/images/uploads/img_1736.jpg" length="19470" type="image/.jpg" />
+    </item>
+    
+  </channel>
+</rss>
+

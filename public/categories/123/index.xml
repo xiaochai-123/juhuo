@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>123 on 炬火</title>
-    <link>https://juhuo.pages.dev/categories/123/</link>
+    <link>http://localhost:1313/categories/123/</link>
     <description>Recent content in 123 on 炬火</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <copyright>Copyright © 2026 炬火社. All Rights Reserved.</copyright>
-    <lastBuildDate>Sun, 12 Jul 2026 16:31:35 +0800</lastBuildDate><atom:link href="https://juhuo.pages.dev/categories/123/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Jul 2026 16:31:35 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/123/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>helloworld</title>
-      <link>https://juhuo.pages.dev/posts/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%85%A5%E9%97%A8/</link>
+      <link>http://localhost:1313/posts/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%85%A5%E9%97%A8/</link>
       <pubDate>Sun, 12 Jul 2026 16:31:35 +0800</pubDate>
-      <guid>https://juhuo.pages.dev/posts/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%85%A5%E9%97%A8/</guid>
+      <guid>http://localhost:1313/posts/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%85%A5%E9%97%A8/</guid>
       <description><![CDATA[<h2 id="数论" data-numberify>数论<a class="anchor ms-1" href="#数论"></a></h2>
 
 <h3 id="模运算" data-numberify>模运算<a class="anchor ms-1" href="#模运算"></a></h3>
@@ -32,7 +32,7 @@
 
 <h4 id="同余的基本性质" data-numberify>同余的基本性质<a class="anchor ms-1" href="#同余的基本性质"></a></h4>
 <p>设 $m$ 为正整数，且 $m &gt; 1$，$a, b, c \in \mathbb{Z}$，则同余满足以下基本性质：</p>]]></description>
-    <enclosure url="https://juhuo.pages.dev/images/123.jpg" length="178351" type="image/.jpg" />
+    <enclosure url="http://localhost:1313/images/123.jpg" length="178351" type="image/.jpg" />
     </item>
     
   </channel>
