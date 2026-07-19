@@ -1,21 +1,24 @@
-backend:
-  name: github
-  repo: xiaochai-123/juhuo
-  branch: main
-  base_url: https://juhuo.pages.dev
-  auth_endpoint: /api/auth
-
-# 因为你的 public/ 就是网站根目录，所以图片直接存在 /images 下
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
-
 collections:
   - name: "posts"
     label: "文章"
-    folder: "posts"   # ← 注意：不要前面的 /
+    folder: "content/posts"
     create: true
     slug: "{{slug}}"
+    
+    # ========== 新增以下配置 ==========
+    frontmatter_delimiter: "+++"   # 使用 TOML 格式的定界符
+    frontmatter_format: "toml"     # 指定 Front Matter 格式为 TOML
+    # ==================================
+    
     fields:
       - { label: "标题", name: "title", widget: "string" }
       - { label: "发布日期", name: "date", widget: "datetime" }
+      - { label: "草稿", name: "draft", widget: "boolean", default: false }
+      - { label: "分类", name: "categories", widget: "list", default: ["123"] }
+      - { label: "标签", name: "tags", widget: "list", default: ["asd"] }
+      - { label: "权重", name: "weight", widget: "number", default: 1 }
+      - { label: "轮播图", name: "carousel", widget: "boolean", default: true }
+      - { label: "图片", name: "images", widget: "image" }
+      - { label: "描述", name: "description", widget: "string" }
+      - { label: "数学公式", name: "math", widget: "boolean", default: true }
       - { label: "正文", name: "body", widget: "markdown" }
